@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
     if user and user.authenticate(params[:password])
       #set the session key called 'user_id' to the id of the user object (user.id)
       #this will store the database id of the user in the client browser
+      ##### ENTER CODE HERE######
 
       redirect_to admin_url
     else
@@ -17,7 +18,6 @@ class SessionsController < ApplicationController
 
   def destroy
     #set the session key "user_id" to nil
-
-    render(text: "You are logged out")
+    ##### ENTER CODE HERE######
   end
 end
