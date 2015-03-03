@@ -13,9 +13,10 @@ class SessionsController < ApplicationController
       #this will store the database id of the user in the client browser
       ##### ENTER CODE HERE######
 
+
       redirect_to admin_url
     else
-      redirect_to login_url, alert: "Invalid user/password combination"
+      redirect_to login_url
     end
 
   end
